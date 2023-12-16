@@ -3,6 +3,7 @@
 nav {
     justify-content:space-between;
     align-items: center;
+    padding-inline: 2rem;
 
     & .brand-logo {
         text-align: center;
@@ -26,5 +27,8 @@ nav {
     & .Links > li > *:hover {
         color: hsl(0, 0%, 0%);
         transition: 250ms ease-in-out;
+    }
+    @include mq(medium) {
+        padding-inline: 0;
     }
 }
