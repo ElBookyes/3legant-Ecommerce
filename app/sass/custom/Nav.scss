@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+nav {
+    justify-content:space-between;
+    align-items: center;
+
+    & .brand-logo {
+        text-align: center;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-style: normal;
+        line-height: 24px; /* 100% */
+    }
+
+    & .Links {
+        display: none;
+        @include mq(medium){
+            display: flex;
+            font-weight: 500;
+        }
+    }
+
+    & .Links > li[data-state="true"] > * {
+        color:hsl(0, 0%, 0%);
+    }
+
+    & .Links > li > *:hover {
+        color: hsl(0, 0%, 0%);
+        transition: 250ms ease-in-out;
+    }
+}
