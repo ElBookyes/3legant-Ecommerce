@@ -3,6 +3,7 @@ import React from "react";
 const CloseIcon = () => {
   return (
     <svg
+      className="closeButton kpds-ponter kpds-scale"
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"

@@ -1,9 +1,12 @@
+'use client'
 import React from "react";
+import { useState } from "react";
 
 const MenuIcon = () => {
   return (
-    <button className="clean | menuButton">
+    <div>
       <svg
+        className="clean | menuButton"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
@@ -17,7 +20,7 @@ const MenuIcon = () => {
           stroke-linecap="round"
         />
       </svg>
-    </button>
+    </div>
   );
 };
 

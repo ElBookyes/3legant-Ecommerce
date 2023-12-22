@@ -1,5 +1,5 @@
-import PopUpNav from "./components/PopUpNav"
-import Nav from "./components/Nav"
+import PopUpNav from "./nav/PopUpNav"
+import Nav from "./nav/Nav"
 
 export default function Home() {
   return (
