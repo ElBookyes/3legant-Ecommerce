@@ -22,7 +22,7 @@ const HeroSection = () => {
      onSwiper={(swiper) => console.log(swiper)}
      onSlideChange={() => console.log('slide change')}
      >
-        <SwiperSlide><Image alt='' src={''} /></SwiperSlide>
+        <SwiperSlide><img src="public/heroSection.png" alt="" /></SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
