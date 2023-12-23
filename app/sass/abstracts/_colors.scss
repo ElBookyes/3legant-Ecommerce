@@ -185,19 +185,19 @@ $dark: (
 );
 
 // contextual color tokens
-$color-neutral-000: var($-clr-white);
-$color-neutral-100: var($-clr-gray-100);
-$color-neutral-200: var($-clr-gray-200);
-$color-neutral-300: var($-clr-gray-300);
-$color-neutral-400: var($-clr-gray-400);
-$color-neutral-500: var($-clr-gray-500);
-$color-neutral-600: var($-clr-gray-600);
+$color-neutral-000: var(--neutral-000);
+$color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+$color-neutral-400: var(--neutral-400);
+$color-neutral-500: var(--neutral-500);
+$color-neutral-600: var(--neutral-600);
 
 
-$color-primary-1000: var($-clr-black);
+$color-primary-1000: var(--primary-1000);
 
 
-$color-secondary-blue: var($-clr-blue);
-$color-secondary-green: var($-clr-green);
-$color-secondary-orange: var($-clr-orange);
-$color-secondary-red: var($-clr-red);
+$color-secondary-blue: var(--secondary-blue);
+$color-secondary-green: var(--seconday-green);
+$color-secondary-orange: var(--secondary-orange);
+$color-secondary-red: var(--secondary-red);

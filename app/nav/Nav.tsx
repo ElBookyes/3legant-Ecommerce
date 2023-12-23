@@ -17,7 +17,7 @@ const Nav = () => {
     <>
     <header className='kpds-site-header'>
         <div className='kpds-container'>
-          <nav className='flex'>
+          <nav className='flex | main-nav'>
             <div className='flex'>
               <button className="clean kpds-pointer kpds-scale"
                 onClick={(e) => {

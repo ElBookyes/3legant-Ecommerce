@@ -15,27 +15,99 @@
     }
 }
 
+.fly-nav {
+    height: 100%;
+}
+
 .search-bar {
     position: relative;
-    &:before {
-        content: "";
-        position: absolute;
-        left: 10px;
-        top: 0;
-        width: 20px;
-        background: url("/public/search\ 02.svg");
-    }
+    display: flex;
+    align-items: center;
 }
   
 .search-input {
-    padding: .5rem;
-    font-size: 1rem;
-    border-radius: 4px;
+    width: 100%;
+    padding: 1rem 1rem 1rem 2.2rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
     outline: 0;
     border: 2px solid black;
+    &:focus {
+        border-color: $color-secondary-blue;
+        outline: none;
+    }
 }
 
+.search-icon {
+    position: absolute;
+    left: .45rem;
+    cursor: pointer;
+    z-index: 9999;
+}
 
-  
+.nav-lists {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
 
+.main-nav-list {
+    width: 100%;
+    color: $color-primary-1000;
+    align-self: start;
+    & li {
+        display: inline-block;
+        width: 100%;
+        padding-block: 1rem;
+        border-bottom: 1px solid $color-neutral-200;
+    }
+    & > * {
+        padding-block: .5rem;
+    }
+}
+
+.dropdown-item {
+    align-items: center;
+}
+
+.secondary-nav-list {
+    width: 100%;
+    align-self: start;
+    & li {
+        display: inline-block;
+        width: 100%;
+        padding-block: 1rem;
+        border-bottom: 1px solid $color-neutral-200;
+    }
+}
+
+.cart-item {
+    align-items: center;
+    gap: .5rem;
+    & > * {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+.signIn-button {
+    width: 100%;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    color: $color-neutral-000;
+    background-color: $color-primary-1000;
+    text-transform: none;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    align-items: center;
+    flex-shrink: 0;
+}
   
