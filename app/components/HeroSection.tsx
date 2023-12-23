@@ -7,21 +7,22 @@ import 'swiper/css/pagination'
 import 'swiper/css/a11y'
 import 'swiper/css/effect-cards'
 import React from 'react'
+import Image from 'next/image'
 
 const HeroSection = () => {
   return (
     <Swiper
-     modules={[Navigation, Pagination, Scrollbar, A11y, EffectCards, FreeMode]}
+     modules={[Navigation, Pagination, Scrollbar, A11y]}
      spaceBetween={50}
      slidesPerView={1}
      navigation
      pagination={{ clickable: true }}
      scrollbar={{draggable: true }}
+     loop={true}
      onSwiper={(swiper) => console.log(swiper)}
      onSlideChange={() => console.log('slide change')}
-     freeMode
      >
-        <SwiperSlide>Slide 1</SwiperSlide>
+        <SwiperSlide><Image alt='' src={''} /></SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>
