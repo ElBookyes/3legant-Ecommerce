@@ -10,6 +10,9 @@
 .menuButton {
     height: 3rem;
     width: 3rem;
+    @include mq(medium){
+        display: none;
+    }
 }
 
 .closeButton {
