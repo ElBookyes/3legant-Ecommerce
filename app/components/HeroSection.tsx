@@ -9,8 +9,9 @@ import 'swiper/css/effect-cards'
 import React from 'react'
 import SofaImage from '../images/sliderSofa'
 import ArrowRight from '../icons/arrowRight'
-import ArrowLeft from '../icons/arrowLeft'
 import SwiperNavButtons from './arrowButtons'
+import chairImg from '../images/chairImg.png'
+import Image from 'next/image'
 
 const HeroSection = () => {
   return (
