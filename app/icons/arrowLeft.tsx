@@ -1,32 +1,32 @@
 import React from "react";
 
-const ArrowRight = () => {
+const ArrowLeft = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
+      width="32"
+      height="32"
+      viewBox="0 0 32 32"
       fill="none"
     >
       <path
-        d="M3.75 9H14.25"
-        stroke="#000"
-        stroke-width="1.125"
+        d="M6.66669 16H25.3334"
+        stroke="#6C7275"
+        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M9.75 13.5L14.25 9"
-        stroke="#000"
-        stroke-width="1.125"
+        d="M6.66669 16L14.6667 24"
+        stroke="#6C7275"
+        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M9.75 4.5L14.25 9"
-        stroke="#000"
-        stroke-width="1.125"
+        d="M6.66669 16L14.6667 8"
+        stroke="#6C7275"
+        stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
@@ -34,4 +34,4 @@ const ArrowRight = () => {
   );
 };
 
-export default ArrowRight;
+export default ArrowLeft;

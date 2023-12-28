@@ -1,0 +1,60 @@
+@use "../abstracts" as *;
+
+.custom-navigation {
+  display: none;
+  margin-top: 10px;
+  @include mq(medium) {
+    display: block;
+  }
+}
+  
+.swiper-button-prev,
+.swiper-button-next {
+  width: 62px !important;
+  height: 62px !important;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-right: 10px;
+  @include mq(small) {
+    display: block;
+  }
+  border-radius: 100px;
+  background: $color-neutral-000;
+}
+
+.swiper-button-prev {
+  background-image: url('/app/images/mobileSofa.png') !important;
+}
+
+.swiper-pagination {
+  display: none;
+  @include mq(medium) {
+    display: block;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $color-neutral-000 !important;
+}
+
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: url('/app/icons/arrowRight.tsx') !important;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: url('/app/icons/arrowLeft.tsx') !important;
+}
+
+// path {
+//   d: path("M 3.75 9 H 14.25");
+//   stroke: rgb(55, 125, 255);
+//   stroke-width: 1.125;
+//   stroke-linecap: round;
+//   stroke-linejoin: round;
+// }
+
+.arrow-right path {
+  stroke: #000;
+}
