@@ -19,14 +19,14 @@ const BannerGrid = () => {
         <div className="kpds-card | bedroom">
             <div className="card-content">
                 <h2 className='kpds-fs-900 kpds-fw-bold'>Bedroom</h2>
-                <Link className='card-content-link' href={''}>Shop Now <span><ArrowRight /></span></Link>
+                <Link className='card-content-link | flex' href={''}>Shop Now <span><ArrowRight /></span></Link>
             </div>
             <Image src={cubbardIMG} alt='a cubbard' layout='responsive'/>
         </div>
         <div className="kpds-card | kitchen">
             <div className="card-content">
                 <h2 className='kpds-fs-900 kpds-fw-bold'>Kitchen</h2>
-                <Link className='card-content-link' href={''}>Shop Now <span><ArrowRight /></span></Link>
+                <Link className='card-content-link | flex' href={''}>Shop Now <span><ArrowRight /></span></Link>
             </div>
             <Image src={toasterIMG} alt='a toaster' layout='responsive'/>
         </div>
