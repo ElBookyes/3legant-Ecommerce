@@ -1,0 +1,26 @@
+@use "../abstracts" as *;
+
+.card-grid {
+    display: grid;
+    grid-template-areas: 'chair cubbard'
+                         'chair toaster';
+    grid-auto-columns: 1fr;
+    gap: 1.5rem;
+    & .living-room {
+        grid-area: chair;
+    }
+    & .bedroom {
+        grid-area: cubbard;
+    }
+    & .kitchen {
+        grid-area: toaster;
+    }
+}
+
+.living-room-link > span {
+    align-self: center;
+}
+
+.card-content-link > span {
+    align-self: center;
+}
