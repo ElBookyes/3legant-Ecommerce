@@ -2,7 +2,6 @@
 
 .swiper {
     min-width: 311px;
-    min-height: 304px;
     max-width: 1120px;
     height: 536px;
     width: 100%;
@@ -17,20 +16,30 @@
 }
 
 .hero-content {
+    margin-top: 1rem;
     align-items: center;
-    justify-items: center;
+    justify-items: center;  
     & h1 {
         color: $color-primary-1000;
-        font-size: $size-11;
+        font-size: $size-8;
+        line-height: 1;
+        @include mq(medium) {
+            font-size: $size-9;
+        }
+        @include mq(large) {
+            font-size: $size-11;
+        }
         & span {
             color: $color-neutral-300;
             font-feature-settings: 'clig' off, 'liga' off;
             font-family: Poppins;
-            font-size: 92px;
+            font-size: 50px;
             font-style: normal;
             font-weight: 900;
-            line-height: 76px;
             letter-spacing: -2px;
+            @include mq(medium) {
+                font-size: 92px;
+            }
         }
     }
     & p {

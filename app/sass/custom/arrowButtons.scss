@@ -28,10 +28,7 @@
 }
 
 .swiper-pagination {
-  display: none;
-  @include mq(medium) {
-    display: block;
-  }
+  //kept if ever needed
 }
 
 .swiper-pagination-bullet-active {
