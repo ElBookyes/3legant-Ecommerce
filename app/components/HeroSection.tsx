@@ -1,5 +1,5 @@
 'use client'
-import { Navigation, Pagination, Scrollbar, A11y, EffectCards, FreeMode } from 'swiper/modules'
+import { Navigation, Pagination, Scrollbar, A11y} from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/navigation'
@@ -17,7 +17,8 @@ const HeroSection = () => {
       <section>
         <div className="slider">
           <Swiper
-           modules={[Navigation, Pagination, Scrollbar, A11y]}
+           className='swiper1'
+           modules={[Navigation, Pagination, Scrollbar]}
            spaceBetween={50}
            slidesPerView={1}
            navigation={{
@@ -25,7 +26,6 @@ const HeroSection = () => {
             prevEl: '.swiper-button-prev',
            }}
            pagination={{ clickable: true }}
-           scrollbar={{draggable: true }}
            loop={true}
            onSwiper={(swiper) => console.log(swiper)}
            onSlideChange={() => console.log('slide change')}
