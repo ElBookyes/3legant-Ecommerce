@@ -3,6 +3,11 @@
 .#{$prefix}{
     &scale:hover {
         transform: scale(1.1);
-        transition: ease 250ms;
+    }
+}
+
+.#{$prefix} {
+    &transition {
+        transition: transform .2s;
     }
 }

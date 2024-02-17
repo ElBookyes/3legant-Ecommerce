@@ -19,7 +19,7 @@ const Nav = () => {
         <div className='kpds-container'>
           <nav className='flex | main-nav'>
             <div className='flex'>
-              <button className="clean kpds-pointer kpds-scale"
+              <button className="clean kpds-pointer kpds-scale kpds-transition"
                 onClick={(e) => {
                 e.preventDefault()
                 e.stopPropagation()
@@ -27,18 +27,18 @@ const Nav = () => {
                } }>
                 <MenuIcon />
               </button>
-              <Link href={"/"} className="kpds-fw-bold kpds-fs-900 kpds-scale kpds-pointer kpds-link | brand-logo">3legant.</Link>
+              <Link href={"/"} className="kpds-fw-bold kpds-fs-900 kpds-scale kpds-pointer kpds-transition kpds-link | brand-logo">3legant.</Link>
             </div>
             <ul className='kpds-nav kpds-flex-group kpds-fs-500 | Links' role='list'>
-              <li data-state="true"><Link href={"/"} className='clean kpds-clr-neutral-300'>Home</Link></li>
-              <li data-state="false"><Link href={"/Shop"} className='clean kpds-clr-neutral-300'>Shop</Link></li>
-              <li data-state="false"><Link href={"/Products"} className='clean kpds-clr-neutral-300'>Products</Link></li>
-              <li data-state="false"><Link href={"/Contacts"} className='clean kpds-clr-neutral-300'>Contact Us</Link></li>
+              <li className='kpds-scale kpds-transition' data-state="true"><Link href={"/"} className='clean kpds-clr-neutral-300'>Home</Link></li>
+              <li className='kpds-scale kpds-transition' data-state="false"><Link href={"/Shop"} className='clean kpds-clr-neutral-300'>Shop</Link></li>
+              <li className='kpds-scale kpds-transition' data-state="false"><Link href={"/Products"} className='clean kpds-clr-neutral-300'>Products</Link></li>
+              <li className='kpds-scale kpds-transition' data-state="false"><Link href={"/Contacts"} className='clean kpds-clr-neutral-300'>Contact Us</Link></li>
             </ul>
             <ul className='kpds-nav kpds-flex-group' role='list'>
-              <li className='kpds-pointer kpds-scale'><SearchIcon/></li>
-              <li className='kpds-pointer kpds-scale'><UserIcon/></li>
-              <li className='kpds-scale kpds-pointer flex'>
+              <li><SearchIcon/></li>
+              <li><UserIcon/></li>
+              <li className='kpds-scale kpds-pointer kpds-transition flex'>
                 <CartButton/>
                 <Eclipse1/>
               </li>

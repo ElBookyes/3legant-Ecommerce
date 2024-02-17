@@ -15,7 +15,7 @@ const ProductCard = ({ bgimg }: Props) => {
         backgroundRepeat: 'no-repeat'
     };
   return (
-    <div className='product-card'>
+    <div className='product-card kpds-scale kpds-pointer kpds-transition'>
       <div className='flex | card-image' style={caroImage}>
         <div className='flex | badge-section'>
           <div className='badges'>
@@ -41,7 +41,6 @@ const ProductCard = ({ bgimg }: Props) => {
         <h2>Loveseat Sofa</h2>
         <div className='flex | card-price'>
           <p>$199.00</p>
-          <p>$400.00</p>
         </div>
       </div>
     </div>

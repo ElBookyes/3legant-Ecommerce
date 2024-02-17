@@ -25,7 +25,7 @@
     }
 
     & .Links > li > *:hover {
-        color: hsl(0, 0%, 0%);
+        color: red;
         transition: 250ms ease-in-out;
     }
     @include mq(small) {
