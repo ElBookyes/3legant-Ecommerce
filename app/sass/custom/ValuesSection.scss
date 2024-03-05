@@ -1,0 +1,18 @@
+@use "../abstracts" as *;
+
+
+.value-section {
+    margin: 0 auto;
+    padding-block: 3em;
+    gap: 2rem;
+}
+
+.value-card {
+    height: 220px;
+    width: 260px;
+    // max-height: 220px;
+    // max-width: 260px;
+    padding-block:2em;
+    padding-inline: 1em;
+    background-color: $color-neutral-200;
+}
