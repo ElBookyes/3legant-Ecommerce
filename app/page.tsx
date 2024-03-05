@@ -14,7 +14,6 @@ export default function Home() {
     <main>
       <HeroSection />
       <BannerGrid />
-      <ProductCarousel />
     </main>
     </>
   )
